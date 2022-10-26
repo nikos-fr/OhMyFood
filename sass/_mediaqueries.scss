@@ -1,0 +1,43 @@
+@include tablet-only {
+    .rest-panelswhite-card {
+        flex-basis: 49%;
+    }
+
+    .restaurant-panelswhite {
+        flex-direction: row;
+    }
+
+    .section-white__card {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .section-white__li {
+
+        margin: 1rem 5rem 1rem 4.75rem;
+
+    }
+}
+
+@include desktop-only {
+    .rest-panelswhite-card {
+        flex-basis: 49%;
+    }
+
+    .restaurant-panelswhite {
+        flex-direction: row;
+    }
+
+    .section-white__card {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .section-white__li {
+
+        margin: 1rem 5rem 1rem 4.75rem;
+
+    }
+}

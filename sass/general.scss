@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+}
+
+body,
+html {
+    font-family: Roboto, sans-serif;
+    margin: $margin;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+}

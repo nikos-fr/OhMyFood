@@ -2,3 +2,9 @@ $Primaire: #9356DC;
 $Secondaire: #FF79DA;
 $Tertiaire: #99E2D0;
 $margin: 0px;
+
+$breakpoint: (
+    "tablet-min":768px,
+    "tablet-max": 1024px,
+    "desktop":1025px
+);

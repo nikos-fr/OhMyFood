@@ -1,0 +1,15 @@
+  // header
+  header {
+      display: flex;
+      justify-content: center;
+
+      .logo {
+          margin: 20px;
+          text-align: center;
+      }
+
+      img {
+          width: auto;
+          height: 35px;
+      }
+  }
