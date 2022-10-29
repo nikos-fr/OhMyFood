@@ -1,9 +1,9 @@
 // import
 
-@import "variables.scss";
-@import "mixin.scss";
-@import "general.scss";
-@import "header.scss";
-@import "main.scss";
-@import "footer.scss";
-@import "mediaqueries.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layouts/general";
+@import "./layouts/header";
+@import "./layouts/main";
+@import "./layouts/footer";
+@import "./utils/mediaqueries";
