@@ -22,30 +22,6 @@ a {
   position: relative;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-section {
-  display: block;
-}
-
-body,
-html {
-  font-family: Roboto, sans-serif;
-  margin: 0px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.container {
-  margin: auto;
-  position: relative;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -76,6 +52,8 @@ header img {
 }
 .reservation-panel__title {
   margin: 0px;
+  display: flex;
+  justify-content: center;
 }
 .reservation-panel__subtitle {
   font-weight: 300;
@@ -170,10 +148,10 @@ header img {
   border-radius: 15px;
   box-shadow: 1px 1px 10px grey;
   padding: 4px;
+  transition: transform 400ms;
 }
 .rest-panelswhite-card:hover {
   transform: scale(1.02);
-  transition: transform 400ms;
 }
 .rest-panelswhite-card-picture {
   overflow: hidden;
@@ -197,142 +175,39 @@ header img {
   padding-bottom: 6px;
 }
 
-.paris-panel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f3f3f3;
-}
-.paris-panel__txt {
-  padding: 20px;
-}
-
-.reservation-panel {
-  padding: 2rem;
-  text-align: center;
-  background-color: #fafafa;
-}
-.reservation-panel__title {
-  margin: 0px;
-}
-.reservation-panel__subtitle {
-  font-weight: 300;
-  margin: 1.5rem 0;
-}
-.reservation-panel__btn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: #fff;
-  background-color: #9356DC;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  cursor: pointer;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-}
-.reservation-panel__btn:hover {
-  transform: scale(1.13);
-  background-color: #99E2D0;
-}
-
-.section-white {
-  padding: 2rem 1rem;
-}
-.section-white__title {
-  margin-top: 0;
-}
-.section-white__card {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: compteListe;
-}
-.section-white__li {
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
-  border-radius: 1.25rem;
-  background-color: #f6f6f6;
-  display: flex;
-  position: relative;
-}
-.section-white__li:before {
-  counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
-  background: #9356dc;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  position: absolute;
-  left: -0.75rem;
-}
-.section-white__txt {
-  margin-left: 10px;
-}
-
-.panelsgrey {
+.heart {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.restaurant {
-  padding: 30px;
-  flex-basis: 100%;
-  background-color: #f3f3f3;
-}
-.restaurant-title {
-  font-size: 20px;
-  margin: 0;
-  padding-bottom: 20px;
-}
-.restaurant-more__text {
-  font-size: 16px;
-  margin: 10px 0 0 0;
-}
-.restaurant-panelswhite {
+footer {
+  background-color: #353535;
+  color: #FFF;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0px;
+  max-width: 100%;
+  min-width: 320px;
 }
-
-.rest-panelswhite-card {
-  flex-basis: 31%;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px grey;
-  padding: 4px;
+footer h3 {
+  margin: 0 0 10px 20px;
+  color: #e6e6e6;
+  font-weight: normal;
 }
-.rest-panelswhite-card:hover {
-  transform: scale(1.02);
-  transition: transform 400ms;
+footer a {
+  text-decoration: none;
 }
-.rest-panelswhite-card-picture {
-  overflow: hidden;
+footer a:hover {
+  text-decoration: underline;
+  color: #FFF;
 }
-.rest-panelswhite-card-picture__img {
-  height: 175px;
-  width: 100%;
-  object-fit: cover;
-}
-.rest-panelswhite-card-description {
-  padding: 10px;
-}
-.rest-panelswhite-card-description__title {
-  font-size: 16px;
-  margin: 0;
-  padding-bottom: 6px;
-}
-.rest-panelswhite-card-description__subtitle {
-  font-size: 13px;
-  margin: 0;
-  padding-bottom: 6px;
+footer .footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -17,6 +17,8 @@
 
       &__title {
           margin: $margin;
+          display: flex;
+          justify-content: center;
       }
 
       &__subtitle {
@@ -123,10 +125,11 @@
       border-radius: 15px;
       box-shadow: 1px 1px 10px grey;
       padding: 4px;
+      transition: transform 400ms;
 
       &:hover {
           transform: scale(1.02);
-          transition: transform 400ms;
+
       }
 
       &-picture {
@@ -155,3 +158,8 @@
           padding-bottom: 6px;
       }
   }
+  .heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

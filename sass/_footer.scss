@@ -1,0 +1,32 @@
+footer {
+    background-color: #353535;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0px;
+    max-width: 100%;
+    min-width: 320px;
+
+    h3 {
+        margin: 0 0 10px 20px;
+        color: #e6e6e6;
+        font-weight: normal;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #FFF;
+    }
+
+    .footer__logo {
+        font-family: 'Shrikhand', cursive;
+        font-weight: normal;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
