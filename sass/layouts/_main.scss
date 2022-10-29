@@ -134,6 +134,7 @@
 
       &-picture {
           overflow: hidden;
+          position: relative;
       }
 
       &-picture__img {
@@ -163,3 +164,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.new {
+    color: #008766;
+    background: #99E2D0;
+    border: 5px solid #99E2D0;
+    border-radius: 5px;
+    position: absolute;
+    right: 6%;
+    top: 8%;
+  }
