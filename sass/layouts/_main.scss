@@ -159,17 +159,28 @@
           padding-bottom: 6px;
       }
   }
+
   .heart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.new {
-    color: #008766;
-    background: #99E2D0;
-    border: 5px solid #99E2D0;
-    border-radius: 5px;
-    position: absolute;
-    right: 6%;
-    top: 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .new {
+      color: #008766;
+      background: #99E2D0;
+      border: 5px solid #99E2D0;
+      border-radius: 5px;
+      position: absolute;
+      right: 6%;
+      top: 8%;
+  }
+
+  .fa-heart:hover {
+      animation: bgcolor 0.5s;
+      font-weight: 900;
+      background: -webkit-linear-gradient(13deg, $Secondaire 0%, #ba62db 66%);
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }

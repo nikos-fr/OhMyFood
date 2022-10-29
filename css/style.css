@@ -192,6 +192,15 @@ header img {
   top: 8%;
 }
 
+.fa-heart:hover {
+  animation: bgcolor 0.5s;
+  font-weight: 900;
+  background: -webkit-linear-gradient(13deg, #FF79DA 0%, #ba62db 66%);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 footer {
   background-color: #353535;
   color: #FFF;
