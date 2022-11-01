@@ -82,11 +82,29 @@ header img {
 .section-white__title {
   margin-top: 0;
 }
+@media screen and (min-width: 1025px) {
+  .section-white__title {
+    display: flex;
+    justify-content: center;
+  }
+}
 .section-white__card {
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-white__card {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .section-white__card {
+    display: flex;
+    justify-content: center;
+  }
 }
 .section-white__li {
   padding: 1.5rem;
@@ -96,6 +114,16 @@ header img {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-white__li {
+    margin: 1rem 5rem 1rem 4.75rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .section-white__li {
+    margin: 1rem 5rem 1rem 4.75rem;
+  }
 }
 .section-white__li:before {
   counter-increment: compteListe 1;
@@ -119,11 +147,22 @@ header img {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 1025px) {
+  .panelsgrey {
+    max-width: 1200px;
+    flex-direction: row;
+  }
+}
 
 .restaurant {
   padding: 30px;
   flex-basis: 100%;
   background-color: #f3f3f3;
+}
+@media screen and (min-width: 1025px) {
+  .restaurant {
+    border-radius: 15px;
+  }
 }
 .restaurant-title {
   font-size: 20px;
@@ -140,6 +179,18 @@ header img {
   justify-content: space-between;
   flex-direction: column;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant-panelswhite {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .restaurant-panelswhite {
+    max-width: 1300px;
+    flex-direction: row;
+    border-radius: 15px;
+  }
+}
 
 .rest-panelswhite-card {
   flex-basis: 31%;
@@ -149,6 +200,16 @@ header img {
   box-shadow: 1px 1px 10px grey;
   padding: 4px;
   transition: transform 400ms;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .rest-panelswhite-card {
+    flex-basis: 49%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .rest-panelswhite-card {
+    flex-basis: 49%;
+  }
 }
 .rest-panelswhite-card:hover {
   transform: scale(1.02);
@@ -228,37 +289,6 @@ footer .footer__logo {
   font-weight: normal;
   font-size: 20px;
   margin-bottom: 15px;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .rest-panelswhite-card {
-    flex-basis: 49%;
-  }
-  .restaurant-panelswhite {
-    flex-direction: row;
-  }
-  .section-white__card {
-    display: flex;
-    justify-content: center;
-  }
-  .section-white__li {
-    margin: 1rem 5rem 1rem 4.75rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .rest-panelswhite-card {
-    flex-basis: 49%;
-  }
-  .restaurant-panelswhite {
-    flex-direction: row;
-  }
-  .section-white__card {
-    display: flex;
-    justify-content: center;
-  }
-  .section-white__li {
-    margin: 1rem 5rem 1rem 4.75rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

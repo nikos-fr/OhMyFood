@@ -50,6 +50,11 @@
 
       &__title {
           margin-top: 0;
+          @include desktop-only {
+            display: flex;
+            justify-content: center;
+
+        }
       }
 
       &__card {
@@ -57,8 +62,19 @@
           padding: 0;
           list-style: none;
           counter-reset: compteListe;
-      }
 
+          @include tablet-only {
+              display: flex;
+              justify-content: center;
+
+          }
+
+          @include desktop-only {
+              display: flex;
+              justify-content: center;
+
+          }
+      }
       &__li {
           padding: 1.5rem;
           margin: 1rem 0 1rem 0.75rem;
@@ -67,6 +83,18 @@
           background-color: #f6f6f6;
           display: flex;
           position: relative;
+
+          @include tablet-only {
+
+              margin: 1rem 5rem 1rem 4.75rem;
+
+          }
+
+          @include desktop-only {
+
+              margin: 1rem 5rem 1rem 4.75rem;
+
+          }
 
           &:before {
               counter-increment: compteListe 1;
@@ -92,12 +120,19 @@
   .panelsgrey {
       display: flex;
       justify-content: space-between;
+      @include desktop-only {
+        max-width: 1200px;
+        flex-direction: row;
+    }
   }
 
   .restaurant {
       padding: 30px;
       flex-basis: 100%;
       background-color: #f3f3f3;
+      @include desktop-only {
+        border-radius: 15px;
+    }
 
       &-title {
           font-size: 20px;
@@ -115,6 +150,17 @@
           flex-wrap: wrap;
           justify-content: space-between;
           flex-direction: column;
+
+          @include tablet-only {
+              flex-direction: row;
+          }
+
+          @include desktop-only {
+              max-width: 1300px;
+              flex-direction: row;
+              border-radius: 15px;
+          }
+
       }
   }
 
@@ -126,6 +172,14 @@
       box-shadow: 1px 1px 10px grey;
       padding: 4px;
       transition: transform 400ms;
+
+      @include tablet-only {
+          flex-basis: 49%;
+      }
+
+      @include desktop-only {
+          flex-basis: 49%;
+      }
 
       &:hover {
           transform: scale(1.02);
