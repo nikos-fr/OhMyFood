@@ -40,6 +40,7 @@ header img {
   justify-content: center;
   align-items: center;
   background-color: #f3f3f3;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .paris-panel__txt {
   padding: 20px;
@@ -49,6 +50,7 @@ header img {
   padding: 2rem;
   text-align: center;
   background-color: #fafafa;
+  padding-bottom: 60px;
 }
 .reservation-panel__title {
   margin: 0px;
@@ -57,7 +59,7 @@ header img {
 }
 .reservation-panel__subtitle {
   font-weight: 300;
-  margin: 1.5rem 0;
+  padding-bottom: 30px;
 }
 .reservation-panel__btn {
   border: 0;
@@ -115,11 +117,6 @@ header img {
   display: flex;
   position: relative;
   align-items: center;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .section-white__li {
-    margin: 1rem 5rem 1rem 0.75rem;
-  }
 }
 @media screen and (min-width: 1025px) {
   .section-white__li {
@@ -254,7 +251,6 @@ header img {
 }
 
 .fa-heart:hover {
-  font-size: 1.75em;
   animation: bgcolor 0.5s;
   font-weight: 900;
   background: -webkit-linear-gradient(13deg, #FF79DA 0%, #ba62db 66%);

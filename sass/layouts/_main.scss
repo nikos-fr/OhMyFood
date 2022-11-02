@@ -4,6 +4,7 @@
       justify-content: center;
       align-items: center;
       background-color: #f3f3f3;
+      box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
 
       &__txt {
           padding: 20px;
@@ -14,6 +15,7 @@
       padding: 2rem;
       text-align: center;
       background-color: #fafafa;
+      padding-bottom: 60px;
 
       &__title {
           margin: $margin;
@@ -23,7 +25,7 @@
 
       &__subtitle {
           font-weight: 300;
-          margin: 1.5rem 0;
+          padding-bottom: 30px;
       }
 
       &__btn {
@@ -85,11 +87,6 @@
           position: relative;
          align-items: center;
 
-          @include tablet-only {
-
-              margin: 1rem 5rem 1rem 0.75rem;
-
-          }
 
           @include desktop-only {
 
@@ -117,6 +114,7 @@
           margin-left: 10px;
       }
   }
+
 
   .panelsgrey {
       display: flex;
@@ -232,7 +230,6 @@
   }
 
   .fa-heart:hover {
-    font-size: 1.75em;
       animation: bgcolor 0.5s;
       font-weight: 900;
       background: -webkit-linear-gradient(13deg, $Secondaire 0%, #ba62db 66%);
