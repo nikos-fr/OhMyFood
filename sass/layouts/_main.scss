@@ -83,16 +83,17 @@
           background-color: #f6f6f6;
           display: flex;
           position: relative;
+         align-items: center;
 
           @include tablet-only {
 
-              margin: 1rem 5rem 1rem 4.75rem;
+              margin: 1rem 5rem 1rem 0.75rem;
 
           }
 
           @include desktop-only {
 
-              margin: 1rem 5rem 1rem 4.75rem;
+              margin: 1rem 5rem 1rem 0.75rem;
 
           }
 
@@ -151,6 +152,7 @@
           justify-content: space-between;
           flex-direction: column;
 
+
           @include tablet-only {
               flex-direction: row;
           }
@@ -170,8 +172,8 @@
       background-color: white;
       border-radius: 15px;
       box-shadow: 1px 1px 10px grey;
-      padding: 4px;
       transition: transform 400ms;
+      overflow: hidden;
 
       @include tablet-only {
           flex-basis: 49%;
@@ -202,9 +204,8 @@
       }
 
       &-description__title {
-          font-size: 16px;
+          font-size: 18px;
           margin: 0;
-          padding-bottom: 6px;
       }
 
       &-description__subtitle {
@@ -231,6 +232,7 @@
   }
 
   .fa-heart:hover {
+    font-size: 1.75em;
       animation: bgcolor 0.5s;
       font-weight: 900;
       background: -webkit-linear-gradient(13deg, $Secondaire 0%, #ba62db 66%);

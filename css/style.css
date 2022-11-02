@@ -114,15 +114,16 @@ header img {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+  align-items: center;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .section-white__li {
-    margin: 1rem 5rem 1rem 4.75rem;
+    margin: 1rem 5rem 1rem 0.75rem;
   }
 }
 @media screen and (min-width: 1025px) {
   .section-white__li {
-    margin: 1rem 5rem 1rem 4.75rem;
+    margin: 1rem 5rem 1rem 0.75rem;
   }
 }
 .section-white__li:before {
@@ -198,8 +199,8 @@ header img {
   background-color: white;
   border-radius: 15px;
   box-shadow: 1px 1px 10px grey;
-  padding: 4px;
   transition: transform 400ms;
+  overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .rest-panelswhite-card {
@@ -227,9 +228,8 @@ header img {
   padding: 10px;
 }
 .rest-panelswhite-card-description__title {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
-  padding-bottom: 6px;
 }
 .rest-panelswhite-card-description__subtitle {
   font-size: 13px;
@@ -254,6 +254,7 @@ header img {
 }
 
 .fa-heart:hover {
+  font-size: 1.75em;
   animation: bgcolor 0.5s;
   font-weight: 900;
   background: -webkit-linear-gradient(13deg, #FF79DA 0%, #ba62db 66%);
@@ -268,14 +269,27 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px 0px;
+  padding: 25px;
   max-width: 100%;
   min-width: 320px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  footer {
+    align-items: center;
+  }
 }
 footer h3 {
   margin: 0 0 10px 20px;
   color: #e6e6e6;
   font-weight: normal;
+}
+footer i {
+  padding-right: 15px;
 }
 footer a {
   text-decoration: none;

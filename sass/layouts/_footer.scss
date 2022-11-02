@@ -4,14 +4,24 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 25px 0px;
+    padding: 25px;
     max-width: 100%;
     min-width: 320px;
+    @include tablet-only {
+        align-items: center;
+    }
+
+    @include desktop-only {
+        align-items: center;
+    }
 
     h3 {
         margin: 0 0 10px 20px;
         color: #e6e6e6;
         font-weight: normal;
+    }
+    i{
+        padding-right: 15px;
     }
 
     a {
