@@ -341,10 +341,10 @@ header img {
   justify-content: space-between;
 }
 .card__global__contenu__dish h3 {
-  font-size: 16px;
+  font-size: 20px;
 }
 .card__global__contenu__dish h4 {
-  font-size: 16px;
+  font-size: 10px;
 }
 .card__global__contenu:hover .card__global__contenu__dish__confirmation {
   margin-right: 0px;
@@ -365,6 +365,12 @@ header img {
 }
 .card__global__contenu:hover .circle {
   transform: rotate(360deg);
+}
+
+.header_menu h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: contents;
 }
 
 .card__global__contenu__dish__confirmation {

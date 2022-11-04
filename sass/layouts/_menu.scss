@@ -50,7 +50,6 @@
 }
 
 
-
 .card__global__entrees {
     animation: fadein 2s;
 
@@ -86,6 +85,7 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+
     &__dish {
         width: 350px;
         padding: 14px 0;
@@ -94,11 +94,11 @@
         justify-content: space-between;
 
         h3 {
-            font-size: 16px;
+            font-size: 20px;
         }
 
         h4 {
-            font-size: 16px;
+            font-size: 10px;
         }
     }
 
@@ -135,7 +135,11 @@
     }
 }
 
-
+.header_menu h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: contents;
+}
 
 .card__global__contenu__dish__confirmation {
     background-color: #99E2D0;
