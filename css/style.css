@@ -203,7 +203,6 @@ header img {
 }
 
 .rest-panelswhite-card {
-  flex-basis: 31%;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 15px;
@@ -299,6 +298,22 @@ header a {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card__global {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .card__global {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 .card {
   background-color: #F6F6F6;
@@ -347,7 +362,7 @@ header a {
 
 .card__global__contenu {
   background-color: #FFF;
-  max-width: 100;
+  max-width: 370px;
   height: 70px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   padding: 0 0 0 16px;
