@@ -141,14 +141,26 @@ header img {
   margin-left: 10px;
 }
 
+.blue {
+  background-color: #f5edff;
+}
+
 .panelsgrey {
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .panelsgrey {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .panelsgrey {
     max-width: 1200px;
     flex-direction: row;
+    margin-bottom: 40px;
   }
 }
 
@@ -280,6 +292,7 @@ header a {
 
 .fa-heart:before {
   margin-left: 20px;
+  font-size: 1.5rem;
 }
 
 .card__global {

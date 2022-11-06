@@ -4,6 +4,7 @@ header a {
     top: 30px;
     color: #000;
 }
+
 .photo__restaurant {
     img {
         width: 100%;
@@ -21,9 +22,10 @@ header a {
 
 .fa-heart:before {
     margin-left: 20px;
+    font-size: 1.5rem;
 }
 
-.card__global{
+.card__global {
     display: flex;
     flex-direction: column;
 }
@@ -207,14 +209,11 @@ header a {
         white-space: nowrap;
     }
 }
-@include desktop-only {
 
+@include desktop-only {}
 
-}
-@include tablet-only {
+@include tablet-only {}
 
-
-}
 /*Bouton Commander*/
 
 .bouton__commander {

@@ -52,11 +52,12 @@
 
       &__title {
           margin-top: 0;
-          @include desktop-only {
-            display: flex;
-            justify-content: center;
 
-        }
+          @include desktop-only {
+              display: flex;
+              justify-content: center;
+
+          }
       }
 
       &__card {
@@ -77,6 +78,7 @@
 
           }
       }
+
       &__li {
           padding: 1.5rem;
           margin: 1rem 0 1rem 0.75rem;
@@ -85,7 +87,7 @@
           background-color: #f6f6f6;
           display: flex;
           position: relative;
-         align-items: center;
+          align-items: center;
 
 
           @include desktop-only {
@@ -115,23 +117,35 @@
       }
   }
 
+  .blue {
+      background-color: #f5edff;
+  }
 
   .panelsgrey {
       display: flex;
       justify-content: space-between;
+
+      @include tablet-only {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+      }
+
       @include desktop-only {
-        max-width: 1200px;
-        flex-direction: row;
-    }
+          max-width: 1200px;
+          flex-direction: row;
+          margin-bottom: 40px;
+      }
   }
 
   .restaurant {
       padding: 30px;
       flex-basis: 100%;
       background-color: #f3f3f3;
+
       @include desktop-only {
-        border-radius: 15px;
-    }
+          border-radius: 15px;
+      }
 
       &-title {
           font-size: 20px;
