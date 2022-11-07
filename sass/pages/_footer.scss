@@ -7,6 +7,7 @@ footer {
     padding: 25px;
     max-width: 100%;
     min-width: 320px;
+
     @include tablet-only {
         align-items: center;
     }
@@ -20,7 +21,8 @@ footer {
         color: #e6e6e6;
         font-weight: normal;
     }
-    i{
+
+    i {
         padding-right: 15px;
     }
 
