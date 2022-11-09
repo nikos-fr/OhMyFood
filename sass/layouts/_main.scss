@@ -243,10 +243,20 @@
   }
 
   .fa-heart:hover {
-      animation: bgcolor 0.5s;
+      background: linear-gradient(#9356dc, #ff79da);
       font-weight: 900;
-      background: -webkit-linear-gradient(13deg, $Secondaire 0%, #ba62db 66%);
       color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: heartAnim linear 0.5s;
+  }
+
+  @keyframes heartAnim {
+      0% {
+          background-size: 100% 0%;
+      }
+
+      100% {
+          background-size: 100% 100%;
+      }
   }

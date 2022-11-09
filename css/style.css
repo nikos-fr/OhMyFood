@@ -262,14 +262,22 @@ header img {
 }
 
 .fa-heart:hover {
-  animation: bgcolor 0.5s;
+  background: linear-gradient(#9356dc, #ff79da);
   font-weight: 900;
-  background: -webkit-linear-gradient(13deg, #FF79DA 0%, #ba62db 66%);
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: heartAnim linear 0.5s;
 }
 
+@keyframes heartAnim {
+  0% {
+    background-size: 100% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
 header a {
   position: absolute;
   left: 30px;
@@ -283,10 +291,8 @@ header a {
   object-fit: cover;
 }
 
-/*Carte restaurant*/
 .card__title {
   font-family: "Shrikhand", cursive;
-  max-width: 322px;
 }
 
 .fa-heart:before {
@@ -322,7 +328,8 @@ header a {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
-  z-index: 1;
+  max-width: 100%;
+  min-width: 320px;
 }
 .card .far {
   align-self: flex-end;
@@ -337,27 +344,6 @@ header a {
   width: 43px;
   height: 3px;
   background: #99E2D0;
-}
-
-.card__global__entrees {
-  animation: fadein 2s;
-}
-
-.card__global__plats {
-  animation: fadein 4s;
-}
-
-.card__global__desserts {
-  animation: fadein 6s;
-}
-
-.card__global__entrees h2,
-.card__global__plats h2,
-.card__global__desserts h2 {
-  font-weight: normal;
-  font-size: 20px;
-  margin-bottom: 0px;
-  margin-top: 50px;
 }
 
 .card__global__contenu {
@@ -468,7 +454,6 @@ header a {
   white-space: nowrap;
 }
 
-/*Bouton Commander*/
 .bouton__commander {
   padding: 30px 0 80px 0;
   text-align: center;

@@ -13,11 +13,11 @@ header a {
     }
 }
 
-/*Carte restaurant*/
+
 
 .card__title {
     font-family: 'Shrikhand', cursive;
-    max-width: 322px;
+
 }
 
 .fa-heart:before {
@@ -51,7 +51,8 @@ header a {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
-    z-index: 1;
+    max-width: 100%;
+    min-width: 320px;
 
     .far {
         align-self: flex-end;
@@ -72,35 +73,8 @@ header a {
 }
 
 
-.card__global__entrees {
-    animation: fadein 2s;
 
 
-
-}
-
-.card__global__plats {
-    animation: fadein 4s;
-
-
-}
-
-.card__global__desserts {
-    animation: fadein 6s;
-
-
-}
-
-.card__global__entrees,
-.card__global__plats,
-.card__global__desserts {
-    h2 {
-        font-weight: normal;
-        font-size: 20px;
-        margin-bottom: 0px;
-        margin-top: 50px;
-    }
-}
 
 .card__global__contenu {
     background-color: #FFF;
@@ -228,9 +202,6 @@ header a {
     }
 }
 
-
-
-/*Bouton Commander*/
 
 .bouton__commander {
     padding: 30px 0 80px 0;
