@@ -72,10 +72,6 @@ header a {
     }
 }
 
-
-
-
-
 .card__global__contenu {
     background-color: #FFF;
     max-width: 370px;
@@ -103,6 +99,27 @@ header a {
             font-size: 11px;
         }
     }
+
+    .header_menu {
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-overflow: ellipsis;
+
+        h3 {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: contents;
+        }
+
+        h4 {
+            font-weight: normal;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
 
     &:hover {
         .card__global__contenu__dish__confirmation {
@@ -137,11 +154,7 @@ header a {
     }
 }
 
-.header_menu h3 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: contents;
-}
+
 
 .card__global__contenu__dish__confirmation {
     background-color: #99E2D0;
@@ -183,24 +196,6 @@ header a {
     width: 25%;
 }
 
-.header_menu {
-    width: 230px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-overflow: ellipsis;
-
-    h3 {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    h4 {
-        font-weight: normal;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-}
 
 
 .bouton__commander {

@@ -371,6 +371,23 @@ header a {
 .card__global__contenu__dish h4 {
   font-size: 11px;
 }
+.card__global__contenu .header_menu {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+}
+.card__global__contenu .header_menu h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: contents;
+}
+.card__global__contenu .header_menu h4 {
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .card__global__contenu:hover .card__global__contenu__dish__confirmation {
   margin-right: 0px;
   min-width: 60px;
@@ -390,12 +407,6 @@ header a {
 }
 .card__global__contenu:hover .circle {
   transform: rotate(360deg);
-}
-
-.header_menu h3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: contents;
 }
 
 .card__global__contenu__dish__confirmation {
@@ -435,23 +446,6 @@ header a {
   font-weight: bold;
   margin-right: 20px;
   width: 25%;
-}
-
-.header_menu {
-  width: 230px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-overflow: ellipsis;
-}
-.header_menu h3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.header_menu h4 {
-  font-weight: normal;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .bouton__commander {
