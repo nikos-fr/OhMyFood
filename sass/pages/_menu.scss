@@ -137,7 +137,7 @@ header a {
 
     &:hover {
         .card__global__contenu__dish__confirmation {
-            margin-right: -1.22rem;
+            margin-right: -1.25rem;
             width: 4rem;
             transition: margin-right 0.5s;
         }
@@ -191,6 +191,7 @@ header a {
 
     .fas {
         margin-left: 4px;
+        color: $Tertiaire ;
     }
 }
 
