@@ -22,6 +22,30 @@ a {
   position: relative;
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fad1 {
+  animation: fadein 2s;
+}
+
+.fad2 {
+  animation: fadein 4s;
+}
+
+.fad3 {
+  animation: fadein 6s;
+}
+
+.fad4 {
+  animation: fadein 8s;
+}
+
 header {
   display: flex;
   justify-content: center;

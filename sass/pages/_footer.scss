@@ -42,10 +42,11 @@ footer {
         font-weight: normal;
         font-size: 20px;
         margin-bottom: 15px;
+
         @include tablet-only {
             margin-left: 0;
         }
-    
+
         @include desktop-only {
             margin-left: 0;
         }

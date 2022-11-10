@@ -28,8 +28,6 @@ header a {
 .card__global {
     display: flex;
     flex-direction: column;
-
-
 }
 
 .card {
@@ -47,18 +45,18 @@ header a {
     }
 
     @include tablet-only {
-    margin-left: 22%;
-    margin-right: 22%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+        margin-left: 22%;
+        margin-right: 22%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
 
     }
 
     @include desktop-only {
         margin-left: 22%;
         margin-right: 22%;
-            border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
 
     }
 }
@@ -232,15 +230,16 @@ header a {
             background-color: $Tertiaire;
         }
     }
+
     @include tablet-only {
 
         background-color: #FFF;
         padding-top: 4rem;
-    
-        }
-    
-        @include desktop-only {
+
+    }
+
+    @include desktop-only {
         background-color: #FFF;
         padding-top: 4rem;
-        }
+    }
 }
