@@ -74,7 +74,7 @@ header a {
 
 .card__global__contenu {
     background-color: #FFF;
-    max-width: 370px;
+    width: 100%;
     height: 70px;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     padding: 0 0 0 16px;
@@ -83,25 +83,30 @@ header a {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    margin-right: 0;
 
     &__dish {
-        width: 350px;
+        width: 100%;
         padding: 14px 0;
         border-radius: .75rem;
         display: flex;
         justify-content: space-between;
+        margin-right: -64px;
 
         h3 {
-            font-size: 13px;
+            font-size: 16px;
+            display: flex;
         }
 
         h4 {
-            font-size: 11px;
+            font-size: 15px;
+            display: flex;
+            margin: 0;
         }
     }
 
     .header_menu {
-        width: 230px;
+        width: 75%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -111,12 +116,15 @@ header a {
             text-overflow: ellipsis;
             white-space: nowrap;
             display: contents;
+            overflow: hidden;
         }
 
         h4 {
             font-weight: normal;
             text-overflow: ellipsis;
             white-space: nowrap;
+            margin: 0;
+            overflow: hidden;
         }
     }
 
@@ -124,7 +132,7 @@ header a {
     &:hover {
         .card__global__contenu__dish__confirmation {
             margin-right: 0px;
-            min-width: 60px;
+            width: 4rem;
             transition: margin-right 0.5s;
         }
 
@@ -135,7 +143,6 @@ header a {
             h3 {
                 text-overflow: ellipsis;
                 white-space: nowrap;
-
             }
 
             h4 {
@@ -191,9 +198,10 @@ header a {
     justify-content: flex-end;
     align-items: flex-end;
     align-self: flex-end;
-    font-weight: bold;
-    margin-right: 20px;
+    font-weight: bold;;
+    padding-right: 20px;
     width: 25%;
+    max-width: 400px;
 }
 
 

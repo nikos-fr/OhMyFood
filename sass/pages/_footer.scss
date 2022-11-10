@@ -10,10 +10,12 @@ footer {
 
     @include tablet-only {
         align-items: center;
+        margin-left: 0;
     }
 
     @include desktop-only {
         align-items: center;
+        margin-left: 0;
     }
 
     h3 {
@@ -40,5 +42,12 @@ footer {
         font-weight: normal;
         font-size: 20px;
         margin-bottom: 15px;
+        @include tablet-only {
+            margin-left: 0;
+        }
+    
+        @include desktop-only {
+            margin-left: 0;
+        }
     }
 }
