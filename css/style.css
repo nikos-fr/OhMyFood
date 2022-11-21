@@ -416,26 +416,24 @@ header a {
 }
 
 .card__global__contenu {
-  max-width: 100%;
   background-color: #FFF;
   width: 100%;
   height: 70px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 0 0 0 16px;
   border-radius: 0.75rem;
   margin: 1rem 0;
   display: flex;
-  justify-content: space-between;
   overflow: hidden;
-  padding-right: 20px;
+  transition: margin-right 0.5s;
+  box-sizing: border-box;
 }
 .card__global__contenu__dish {
   width: 100%;
-  padding: 14px 0;
+  padding: 14px;
   border-radius: 0.75rem;
   display: flex;
   justify-content: space-between;
-  margin-right: -85px;
+  box-sizing: border-box;
 }
 .card__global__contenu__dish h3 {
   font-size: 16px;
@@ -449,7 +447,6 @@ header a {
   overflow: hidden;
 }
 .card__global__contenu .header_menu {
-  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -469,9 +466,9 @@ header a {
   overflow: hidden;
 }
 .card__global__contenu:hover .card__global__contenu__dish__confirmation {
-  margin-right: -1.25rem;
   width: 4rem;
   transition: margin-right 0.5s;
+  margin-right: 0rem;
 }
 .card__global__contenu:hover .header_menu {
   white-space: nowrap;
@@ -494,7 +491,8 @@ header a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: -47px;
+  transition: margin-right 0.5s ease-in-out;
+  margin-right: -4rem;
 }
 
 .circle {
@@ -524,8 +522,6 @@ header a {
   align-items: flex-end;
   align-self: flex-end;
   font-weight: bold;
-  width: 25%;
-  max-width: 400px;
 }
 
 .bouton__commander {
