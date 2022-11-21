@@ -1,4 +1,5 @@
 .loader {
+  display: flex;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -92,6 +93,10 @@ a {
   animation: fadein 8s;
 }
 
+a {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -110,7 +115,7 @@ header img {
   justify-content: center;
   align-items: center;
   background-color: #f3f3f3;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 10px 0px rgba(206, 206, 206, 0.3) inset;
 }
 .paris-panel__txt {
   padding: 20px;
