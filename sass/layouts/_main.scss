@@ -226,12 +226,6 @@
       }
   }
 
-  .heart {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-
   .new {
       color: #008766;
       background: #99E2D0;
@@ -241,7 +235,11 @@
       right: 6%;
       top: 8%;
   }
-
+  .heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
   .fa-heart:hover {
       background: linear-gradient(#9356dc, #ff79da);
       font-weight: 900;

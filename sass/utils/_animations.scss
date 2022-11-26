@@ -1,0 +1,48 @@
+.heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .fa-heart:hover {
+      background: linear-gradient(#9356dc, #ff79da);
+      font-weight: 900;
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: heartAnim linear 0.5s;
+  }
+
+  @keyframes heartAnim {
+      0% {
+          background-size: 100% 0%;
+      }
+
+      100% {
+          background-size: 100% 100%;
+      }
+  }
+  @keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fad1 {
+    animation: fadein 2s;
+}
+
+.fad2 {
+    animation: fadein 4s;
+}
+
+.fad3 {
+    animation: fadein 6s;
+}
+
+.fad4 {
+    animation: fadein 8s;
+}
