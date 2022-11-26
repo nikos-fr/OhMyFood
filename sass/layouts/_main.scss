@@ -120,7 +120,7 @@
   .blue {
       background-color: #f5edff;
   }
-
+// panel gris
   .panelsgrey {
       display: flex;
       justify-content: space-between;
@@ -137,7 +137,7 @@
           margin-bottom: 40px;
       }
   }
-
+// restaurant
   .restaurant {
       padding: 30px;
       flex-basis: 100%;
@@ -234,27 +234,4 @@
       position: absolute;
       right: 6%;
       top: 8%;
-  }
-  .heart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  .fa-heart:hover {
-      background: linear-gradient(#9356dc, #ff79da);
-      font-weight: 900;
-      color: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: heartAnim linear 0.5s;
-  }
-
-  @keyframes heartAnim {
-      0% {
-          background-size: 100% 0%;
-      }
-
-      100% {
-          background-size: 100% 100%;
-      }
   }
