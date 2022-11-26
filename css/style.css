@@ -466,13 +466,13 @@ header a {
 }
 .card__global__contenu__dish h3 {
   text-overflow: ellipsis;
-  font-size: 14px;
+  font-size: 11px;
   display: flex;
   overflow: hidden;
 }
 .card__global__contenu__dish h4 {
   text-overflow: ellipsis;
-  font-size: 12px;
+  font-size: 10px;
   display: flex;
   margin: 0;
   overflow: hidden;
